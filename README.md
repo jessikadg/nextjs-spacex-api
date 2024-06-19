@@ -30,6 +30,7 @@ For the sake of time some features were prioritised over others. Here is what th
 ✅ Uses Server-Side Rendering for data fetching <br/>
 ✅ Uses Static Side Generation for client features such as React State<br/>
 ✅ Handles data with several data-nesting dimensions dynamically<br/>
+✅ Dynamic Routing using new Next App Routing <br/>
 ✅ Reactive filtering upon typing/selecting<br/>
 ✅ Deployed on AWS Amplify<br/>
 ✅ Components structured in a re-usable way<br/>
