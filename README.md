@@ -1,3 +1,5 @@
+<img width="1468" alt="Screenshot 2024-06-19 at 15 25 12" src="https://github.com/jessikadg/nextjs-spacex-api/assets/48770521/b4bc1516-a2a9-41e3-9fb4-f1885059a4d6">
+
 # SpaceX Launches Next.js + API
 
 This is an assignment project built in June 2024, in React.js + Next.js 14 + Typescript. Deployed with AWS Amplify.
