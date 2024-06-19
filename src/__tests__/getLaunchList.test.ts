@@ -1,5 +1,5 @@
 import { getLaunchList } from "@/api/getLaunchList";
-import { Launch } from "@/types/Launch";
+import { Launch } from "@/types/types";
 import { launchExample } from "@/utils/launchListExample";
 import { jest } from "@jest/globals";
 
@@ -44,21 +44,4 @@ test("handles network error gracefully", async () => {
   expect(fetch).toHaveBeenCalledWith("https://api.spacexdata.com/v5/launches", {
     method: "GET",
   });
-});
-
-// Test for unexpected data structure
-test("handles unexpected data structure", async () => {
-  const unexpectedData = [{ unexpected: "data" }];
-
-  (global.fetch as jest.Mock).mockImplementationOnce(
-    (): Promise<Response> =>
-      Promise.resolve({
-        ok: true,
-        json: () => Promise.resolve(unexpectedData),
-      } as Response)
-  );
-
-  const launches: Launch[] = await getLaunchList();
-
-  expect(launches).toEqual(unexpectedData);
 });

@@ -18,8 +18,9 @@
         "name": "next"
       }
     ],
+
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["src/*"]
     },
     "types": ["jest", "node"],
 
@@ -27,6 +28,7 @@
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true
   },
+
   "include": [
     "next-env.d.ts",
     "**/*.ts",

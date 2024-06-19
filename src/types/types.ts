@@ -29,3 +29,7 @@ export interface CardProps {
   date: string;
   details: string;
 }
+
+export interface SearchBarProps {
+  onSearch: (filters: Filters) => void;
+}

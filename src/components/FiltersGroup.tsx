@@ -1,12 +1,8 @@
 "use client";
-import { Filters } from "@/types/types";
+import { Filters, SearchBarProps } from "@/types/types";
 import React, { useEffect, useState } from "react";
 
-interface SearchBarProps {
-  onSearch: (filters: Filters) => void;
-}
-
-const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
+export default function FiltersGroup({ onSearch }: SearchBarProps) {
   const [name, setName] = useState<string | undefined>(undefined);
   const [startDate, setStartDate] = useState<string | undefined>(undefined);
   const [endDate, setEndDate] = useState<string | undefined>(undefined);
@@ -102,6 +98,4 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
       </div>
     </div>
   );
-};
-
-export default SearchBar;
+}

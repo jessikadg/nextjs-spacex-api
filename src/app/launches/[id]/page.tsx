@@ -21,7 +21,7 @@ export default async function LaunchDetails({
       <div className="p-20 flex flex-col justify-center w-full">
         <div className="w-full flex justify-center mb-2">
           <Image
-            src={launchDetails.links.patch.large}
+            src={launchDetails.links.patch.small}
             alt="launch image"
             width={300}
             height={150}

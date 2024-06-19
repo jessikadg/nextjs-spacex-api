@@ -14,7 +14,7 @@ export default function Card({ name, date, details, imageUrl }: CardProps) {
           />
         </div>
       ) : (
-        <div className="w-full h-48 mb-4 bg-slate-300" />
+        <div className="w-full h-48 mb-4 bg-slate-500" />
       )}
 
       <h2 className="text-xl my-3 text-center">{name}</h2>

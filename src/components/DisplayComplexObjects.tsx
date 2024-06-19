@@ -34,12 +34,12 @@ export const DisplayNestedObject: React.FC<{ data: Dictionary }> = ({
 export const DisplayFlattenedObject: React.FC<{ data: Dictionary }> = ({
   data,
 }) => (
-  <div>
+  <>
     {Object.entries(data).map(([key, value]) => (
       <div key={key} className="mb-2">
         <span className="font-bold">{key}: </span>
         <DisplayValue value={value} />
       </div>
     ))}
-  </div>
+  </>
 );

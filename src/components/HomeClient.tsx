@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { Filters, Launch } from "@/types/types";
-import SearchBar from "./Filters";
+import FiltersGroup from "./FiltersGroup";
 import Link from "next/link";
 import Card from "./Card";
 import Image from "next/image";
@@ -19,6 +19,7 @@ const HomeClient: React.FC<{ initialLaunches: Launch[] }> = ({
 
   const [filteredLaunches, setFilteredLaunches] =
     useState<Launch[]>(initialLaunches);
+
   const handleSearch = (filters: Filters, launches: Launch[]) => {
     const { name, startDate, endDate, launchSuccess, upcoming } = filters;
 
@@ -61,7 +62,7 @@ const HomeClient: React.FC<{ initialLaunches: Launch[] }> = ({
         <div className="fixed w-auto bg-blue-800/30 p-8 z-2  h-full">
           <div className="mt-8">
             <p className="text-center text-slate-50">Filters</p>
-            <SearchBar onSearch={setFilters} />
+            <FiltersGroup onSearch={setFilters} />
           </div>
         </div>
       </div>
@@ -72,7 +73,7 @@ const HomeClient: React.FC<{ initialLaunches: Launch[] }> = ({
             src="https://upload.wikimedia.org/wikipedia/commons/2/2e/SpaceX_logo_black.svg"
             width={400}
             height={100}
-            alt="space x logo"
+            alt="Space X logo"
             className="invert"
           />
         </div>
@@ -92,7 +93,9 @@ const HomeClient: React.FC<{ initialLaunches: Launch[] }> = ({
             ))}
           </div>
         ) : (
-          <div>Loading...</div>
+          <div>
+            <p className="text-white">No data found</p>
+          </div>
         )}
       </div>
     </main>
