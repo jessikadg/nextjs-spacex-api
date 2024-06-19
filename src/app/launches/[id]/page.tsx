@@ -1,6 +1,6 @@
 import { getLaunchDetails } from "@/api/getLaunchDetails";
 import { DisplayFlattenedObject } from "@/components/DisplayComplexObjects";
-import { Dictionary, Launch } from "@/types/types";
+import { Launch } from "@/types/types";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -18,8 +18,17 @@ export default async function LaunchDetails({
           <span>{`<- Back to Home`}</span>
         </Link>
       </div>
-      <div className="container p-20">
-        <div className="flex mt-10">
+      <div className="p-20 flex flex-col justify-center w-full">
+        <div className="w-full flex justify-center mb-2">
+          <Image
+            src={launchDetails.links.patch.large}
+            alt="launch image"
+            width={300}
+            height={150}
+          />
+        </div>
+
+        <div className="flex mt-10 container w-full  justify-center">
           <div>
             <h1 className="text-4xl tracking-wide my-4 text-center">
               {launchDetails.name}
@@ -27,23 +36,12 @@ export default async function LaunchDetails({
             <p className="text text-center">
               {new Date(launchDetails.date_utc).toUTCString()}
             </p>
-            <p className="text-center">
+            <p className="text-center mb-4">
               {launchDetails.details || "no details for this launch yet"}
             </p>
 
             <div>
               <DisplayFlattenedObject data={launchDetails} />
-            </div>
-          </div>
-
-          <div className="fixed right-48 h-full">
-            <div className="flex flex-col justify-center">
-              <Image
-                src={launchDetails.links.patch.large}
-                alt="launch image"
-                width={400}
-                height={150}
-              />
             </div>
           </div>
         </div>
