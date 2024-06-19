@@ -1,17 +1,55 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# SpaceX Launches Next.js + API
 
-## Getting Started
+This is an assignment project built in June 2024, in React.js + Next.js 14 + Typescript. Deployed with AWS Amplify.
+You can check out the project live at https://main.d1a38j5q5k3f3d.amplifyapp.com/launches/5eb87cdaffd86e000604b32b
 
-First, run the development server:
+## Assignment Requirements
+Here were the requirements for the project:
+
+1. 🛬 A landing page that displays a list of all the launches available in the API. Each
+launch should be displayed with its patch, mission name, launch date, and details.
+You can search by “rocket name” and you can also filter on the launches by “launch
+date”, “launch success” and “upcoming”
+2. 🗣 When a user clicks on a launch, a page should open displaying the main
+information about that launch that is available with the API, such as the mission
+name, launch date, details, and the rocket used for the launch. Also it mentions
+who was the crew with additional information of the crew.
+3. 🚀 On the launch detail page, the user should also be able to browse through the
+payloads of the launch and view their details.
+4. 🧠 The application should remember the state of the user after refreshing the page.
+In other words, if the user is on a specific launch detail page, that page should be
+saved so that the user is taken back to the same page after refreshing the page.
+5. Add some tests
+
+
+## Decisions and Development
+
+For the sake of time some features were prioritised over others. Here is what this code base does cover:
+
+✅ All requirements 💯
+✅ Uses Server-Side Rendering for data fetching 
+✅ Uses Static Side Generation for client features such as React State
+✅ Handles data with several data-nesting dimensions dynamically
+✅ Reactive filtering upon typing/selecting
+✅ Deployed on AWS Amplify
+✅ Components structured in a re-usable way
+✅ Some Design + Styling
+
+Some points that were de-prioritised for now / improvement points:
+
+❌ Not responsive - but you can check my responsiveness skills in my portfolio: https://jessthedev.netlify.app
+❌ No Atomic Design Principles - but uses Reactive Components
+❌ Limited tests
+❌ No Search Engine Optimization
+
+
+## How to run it locally
+
+Clone this repository and run
 
 ```bash
+npm i
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
@@ -19,18 +57,3 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
