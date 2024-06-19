@@ -41,6 +41,7 @@ Some points that were de-prioritised for now / improvement points:
 ❌ No Atomic Design Principles - but uses Reactive Components<br/>
 ❌ Limited tests<br/>
 ❌ No Search Engine Optimization<br/>
+❌ Date parsing for display such as monment.js<br/>
 
 
 ## How to run it locally
