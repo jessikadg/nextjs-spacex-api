@@ -25,22 +25,22 @@ saved so that the user is taken back to the same page after refreshing the page.
 ## Decisions and Development
 
 For the sake of time some features were prioritised over others. Here is what this code base does cover:
-
-✅ All requirements 💯
-✅ Uses Server-Side Rendering for data fetching 
-✅ Uses Static Side Generation for client features such as React State
-✅ Handles data with several data-nesting dimensions dynamically
-✅ Reactive filtering upon typing/selecting
-✅ Deployed on AWS Amplify
-✅ Components structured in a re-usable way
-✅ Some Design + Styling
-
+<br/>
+✅ All requirements 💯 <br/>
+✅ Uses Server-Side Rendering for data fetching <br/>
+✅ Uses Static Side Generation for client features such as React State<br/>
+✅ Handles data with several data-nesting dimensions dynamically<br/>
+✅ Reactive filtering upon typing/selecting<br/>
+✅ Deployed on AWS Amplify<br/>
+✅ Components structured in a re-usable way<br/>
+✅ Some Design + Styling<br/>
+<br/>
 Some points that were de-prioritised for now / improvement points:
-
-❌ Not responsive - but you can check my responsiveness skills in my portfolio: https://jessthedev.netlify.app
-❌ No Atomic Design Principles - but uses Reactive Components
-❌ Limited tests
-❌ No Search Engine Optimization
+<br/>
+❌ Not responsive - but you can check my responsiveness skills in my portfolio: https://jessthedev.netlify.app<br/>
+❌ No Atomic Design Principles - but uses Reactive Components<br/>
+❌ Limited tests<br/>
+❌ No Search Engine Optimization<br/>
 
 
 ## How to run it locally
