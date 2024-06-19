@@ -43,6 +43,7 @@ Some points that were de-prioritised for now / improvement points:
 ❌ Limited tests<br/>
 ❌ No Search Engine Optimization<br/>
 ❌ Date parsing for display such as moment.js<br/>
+❌ No loading status handling<br/>
 
 
 ## How to run it locally
