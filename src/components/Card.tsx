@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Card({ name, date, details, imageUrl }: CardProps) {
   return (
-    <div className="bg-indigo-100/50 w-64 h-96 p-4 border-round-xl rounded-lg">
+    <div className="bg-indigo-100/50 w-72 md:w-64 h-96 p-4 border-round-xl rounded-lg">
       {imageUrl ? (
         <div className="p-2 w-full relative h-48">
           <Image

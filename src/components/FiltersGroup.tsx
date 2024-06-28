@@ -1,5 +1,5 @@
 "use client";
-import { Filters, SearchBarProps } from "@/types/types";
+import { SearchBarProps } from "@/types/types";
 import React, { useEffect, useState } from "react";
 
 export default function FiltersGroup({ onSearch }: SearchBarProps) {
@@ -33,7 +33,7 @@ export default function FiltersGroup({ onSearch }: SearchBarProps) {
         />
       </div>
 
-      <div className="flex flex-col ">
+      <div className="flex flex-col">
         <select
           value={
             launchSuccess !== undefined

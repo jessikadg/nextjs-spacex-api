@@ -13,7 +13,7 @@ export default async function LaunchDetails({
 
   return (
     <div className="bg-custom-gradient w-full min-h-screen flex flex-col text-white">
-      <div className="w-full bg-slate-800/80 fixed z-2 h-10 p-2">
+      <div className="w-full bg-slate-800/80 fixed  h-10 p-2">
         <Link href={"/"} className="fixed">
           <span>{`<- Back to Home`}</span>
         </Link>

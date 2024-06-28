@@ -46,6 +46,7 @@ Some points that were de-prioritised for now / improvement points:
 ❌ No Search Engine Optimization<br/>
 ❌ Date parsing for display such as moment.js<br/>
 ❌ No loading status handling<br/>
+❌ No caching or revalidation<br/>
 
 ## How to run it locally
 
